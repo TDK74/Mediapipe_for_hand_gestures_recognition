@@ -1,7 +1,7 @@
 # Mediapipe_for_hand_gestures_recognition
-Inspired by YouTube lesson "Control of Real World Objects with Gesture Recognition in Mediapipe" of Paul McWhorter.
+Inspired by the YouTube lesson "Control of Real-World Objects with Gesture Recognition in Mediapipe" of Paul McWhorter.
 
-* AI for Everyone LESSON 29: Control of Real World Objects with Gesture Recognition in Mediapipe:
+* AI for Everyone LESSON 29: Control of Real-World Objects with Gesture Recognition in Mediapipe:
 
   <https://youtu.be/OgiYbcGaDEI?si=hR3IWCkkyGVehwjz>
 
@@ -22,5 +22,28 @@ See **_pip_freeze.txt_** (from virtual env) for more details if interested.
 
 Certain refactoring of the code (gestures_recognition.py) was done by me.
 
-## Note
+# Failed attempts to run Gesture Recognition with Mediapipe only on Raspberry Pi 4
+This project aims to run gesture recognition using MediaPipe directly on a Raspberry Pi 4. Initially, in the original course, MediaPipe was running on a laptop with Windows 10, and the LED control was managed by an Arduino connected via a USB cable to the laptop.
+
+**Installation Attempts**
+
+I've tried to install and run MediaPipe on my Raspberry Pi 4, but despite successful installations using commands like pip install mediapipe or pip install mediapipe-rpi4, it did not work in the end.
+
+**Issues with aarch64**
+
+I found out that MediaPipe would not work on the aarch64 architecture. To resolve this, I tried to write 32-bit Rasp OS on 2 new SD cards with the following images written using Rasp Pi Imager and balenaEtcher:
+
+2024-10-22-raspios-bullseye-armhf-full.img.xz
+
+2024-03-12-raspios-bookworm-armhf-full.img.xz
+
+However, upon checking, the system always detected aarch64 instead of armhf.
+
+**Virtual Environment and Docker container Attempts**
+
+I also tried running MediaPipe in a virtual environment, in a Docker container, and a virtual environment inside a Docker container. Unfortunately, after spending 2 days on unsuccessful attempts, it still did not work.
+
+**Final Solution**
+
+Finally, I managed to run the MediaPipe project on my laptop with Windows 10, but now the connection was established using SSH commands to control the LEDs connected to the GPIO pins of the Raspberry Pi 4.
 
