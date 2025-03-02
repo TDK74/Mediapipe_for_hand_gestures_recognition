@@ -22,7 +22,7 @@ See **_pip_freeze.txt_** (from virtual env) for more details if interested.
 
 Certain refactoring of the code (gestures_recognition.py) was done by me.
 
-# Failed attempts to run Gesture Recognition with Mediapipe only on Raspberry Pi 4
+## Failed attempts to run Gesture Recognition with Mediapipe only on Raspberry Pi 4
 This project aims to run gesture recognition using MediaPipe directly on a Raspberry Pi 4. Initially, in the original course, MediaPipe was running on a laptop with Windows 10, and the LED control was managed by an Arduino connected via a USB cable to the laptop.
 
 **Installation Attempts**
