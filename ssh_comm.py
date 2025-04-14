@@ -31,7 +31,7 @@ def gesture_commands(sign_command: str):
     List of gesture commands to be sent via ssh to RaspPi 4
     '''
 
-    command = sign_command
+    command = sign_command.capitalize()
 
     try:
         print(f"Gesture command is: {command}")
