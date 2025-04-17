@@ -20,10 +20,10 @@ Inspired by the YouTube lesson "Control of Real-World Objects with Gesture Recog
 
 See **_pip_freeze.txt_** (from virtual env) for more details if interested.
 
-Certain refactoring of the code (gestures_recognition.py) was done by me.
+Certain refactoring of the original code (gestures_recognition.py) from the lesson was done by me.
 
 ## Failed attempts to run Gesture Recognition with Mediapipe only on Raspberry Pi 4
-This project aimed to run gesture recognition using MediaPipe directly on Raspberry Pi 4. Initially, in the original course, MediaPipe was running on laptop with Windows 10, and the LED control was managed by Arduino, connected via a USB cable to the laptop.
+This project aimed to run gesture recognition using MediaPipe directly on Raspberry Pi 4. In Paul McWhorter's course/lesson initially, MediaPipe was running on a laptop with Windows 10, and the LED control was managed by Arduino, connected via a USB cable to the laptop.
 
 **Installation Attempts**
 
@@ -41,9 +41,9 @@ However, upon checking, the system always detected aarch64 instead of armhf.
 
 **Virtual Environment and Docker container Attempts**
 
-I also tried running MediaPipe in a virtual environment, in Docker container, and a virtual environment inside Docker container. Unfortunately, after spending 2 days on unsuccessful attempts, it still did not work.
+I also tried running MediaPipe in a virtual environment, in a Docker container, and virtual environment inside a Docker container. Unfortunately, after spending 2 days on unsuccessful attempts, it still did not work.
 
 **Final Solution**
 
-Finally, I managed to run the MediaPipe project on my laptop with Windows 10, but now the connection was established using SSH commands to control the LEDs connected to the GPIO pins of my Raspberry Pi 4.
+Finally, I managed to run the MediaPipe project on my laptop with Windows 10, but now the connection was established using SSH commands (via WiFi) to control the LEDs connected to the GPIO pins of my Raspberry Pi 4.
 
