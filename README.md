@@ -46,4 +46,8 @@ I also tried running MediaPipe in a virtual environment, in a Docker container, 
 **Final Solution**
 
 Finally, I managed to run the MediaPipe project on my laptop with Windows 10, but now the connection was established using SSH commands (via WiFi) to control the LEDs connected to the GPIO pins of my Raspberry Pi 4.
-
+  
+  
+## Video demo
+Link to my illustrative Youtube video:  
+https://youtu.be/UrYEcI575t4
